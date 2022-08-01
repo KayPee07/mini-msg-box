@@ -52,9 +52,6 @@ app.post("/success",(req,res)=>{
 app.get("/",(req,res)=>{
    
     return res.redirect('index.html');
-});
+}).listen(port);
 
-app.listen(port,()=>{
-    console.log(`Listening on PORT ${port}`);
-})
 console.log("Listening on PORT 7000");
