@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mini-Message</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-6 main">
+                <form action="/success" method="POST">
+                    <h1 style="font-size: 40px;">Mini-Message-Board</h1>
+                    <label>Name:</label>
+                    <input type="text" class="box" id="name" name="name" placeholder="write your name here...."
+                        required />
+                    <br>
+                    <label>Date:</label>
+                    <input type="date" name="date" style="margin: 15px;" required />
+                    <br>
+                    <div class="ab-3 mt-3 text_area">
+                        <label for="comment" style="margin-right: 15px;">Message:</label>
+                        <textarea class="form-control" rows="5" id="text" name="text"
+                            placeholder="write your message here..." required></textarea>
+                    </div>
+                    <br>
+                    <input type="submit" value="Send Msg" id="submit" />
+                </form>
+            </div>
+        </div>
+        <div class="display">
+            <table class="table table-striped mt-5">
+                <thead>
+                    <th>Name</th>
+                    <th>Messages</th>
+                    <th>Date</th>
+                </thead>
+                <tbody id="list">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
